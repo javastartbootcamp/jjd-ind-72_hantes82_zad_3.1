@@ -2,16 +2,8 @@ package pl.javastart.task;
 
 public class Room {
     public static void main(String[] args) {
-        Sofa firstSofa = new Sofa();
-        Sofa secondSofa = new Sofa();
-        firstSofa.producer = "Heban";
-        firstSofa.material = "Leather";
-        firstSofa.length = 215;
-        firstSofa.width = 70;
-        secondSofa.producer = "BlackMebel";
-        secondSofa.material = "Skaja";
-        secondSofa.length = 200;
-        secondSofa.width = 60;
+        Sofa firstSofa = new Sofa("Heban", "Leather", 215, 70);
+        Sofa secondSofa = new Sofa("BlackMebel", "Skaja", 200, 60);
 
         System.out.printf("Informacje o sofie: %s\n", firstSofa.producer);
         System.out.printf("Materiał: %s\n", firstSofa.material);
